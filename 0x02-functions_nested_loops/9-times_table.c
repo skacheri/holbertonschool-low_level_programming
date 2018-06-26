@@ -39,7 +39,6 @@ void times_table(void)
 			}
 			if (b == 10)
 			{
-				_putchar('$');
 				_putchar('\n');
 			}
 		}
