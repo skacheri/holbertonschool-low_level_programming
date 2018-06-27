@@ -14,12 +14,12 @@ int main(void)
 	second = 2;
 	next = 0;
 	sum = 2;
-	for (n = 3; n <= 60; n++)
+	for (n = 3; next < 4000000; n++)
 	{
 		next = first + second;
 		first = second;
 		second = next;
-		if ((n % 2) == 0 && next < 4000000)
+		if ((n % 2) == 0)
 		{
 			sum = sum + next;
 		}
