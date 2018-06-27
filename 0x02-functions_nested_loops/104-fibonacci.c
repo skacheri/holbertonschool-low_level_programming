@@ -15,8 +15,8 @@ int main(void)
 	first = 1;
 	second = 2;
 	next = 0;
-	printf("%Lf, ", first);
-	printf("%Lf, ", second);
+	printf("%.0Lf, ", first);
+	printf("%.0Lf, ", second);
 	for (n = 1; n <= 96; n++)
 	{
 		next = first + second;
