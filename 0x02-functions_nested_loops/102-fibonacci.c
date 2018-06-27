@@ -9,22 +9,22 @@
 int main(void)
 {
 	int n;
-	long long int first, second, next;
+	unsigned long int first, second, next;
 
 	first = 1;
 	second = 2;
 	next = 0;
-	printf("%lli, ", first);
-	printf("%lli, ", second);
+	printf("%lu, ", first);
+	printf("%lu, ", second);
 	for (n = 1; n <= 48; n++)
 	{
 		next = first + second;
 		first = second;
 		second = next;
 		if (n != 48)
-		printf("%lli, ", next);
+		printf("%lu, ", next);
 		else
-		printf("%lli\n", next);
+		printf("%lu\n", next);
 	}
 	return (0);
 }
