@@ -11,15 +11,15 @@ int main(void)
 	unsigned long int sum, first, second, next;
 
 	first = 1;
-	second = 1;
+	second = 2;
 	next = 0;
-	sum = 0;
-	for (n = 2; next < 4000000; n++)
+	sum = 2;
+	for (n = 0; next <= 4000000; n++)
 	{
 		next = first + second;
 		first = second;
 		second = next;
-		if ((n % 2) == 0)
+		if ((next % 2) == 0)
 		{
 			sum = sum + next;
 		}
