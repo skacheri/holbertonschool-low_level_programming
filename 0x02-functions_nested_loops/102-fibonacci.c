@@ -15,7 +15,7 @@ int main(void)
 	second = 2;
 	next = 0;
 	printf("%lli, ", first);
-	printf("%lli\n", second);
+	printf("%lli, ", second);
 	for (n = 1; n <= 48; n++)
 	{
 		next = first + second;
