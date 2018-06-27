@@ -12,16 +12,16 @@ int main(void)
 	long long int first, second, next;
 
 	first = 1;
-	second = 1;
+	second = 2;
 	next = 0;
 	printf("%lli, ", first);
 	printf("%lli, ", second);
-	for (n = 1; n < 48; n++)
+	for (n = 1; n <= 48; n++)
 	{
 		next = first + second;
 		first = second;
 		second = next;
-		if (n != 47)
+		if (n != 48)
 		printf("%lli, ", next);
 		else
 		printf("%lli\n", next);
