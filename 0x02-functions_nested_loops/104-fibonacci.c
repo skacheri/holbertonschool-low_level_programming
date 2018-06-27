@@ -2,7 +2,7 @@
 
 /**
 * main -entry point
-* program to print the first 50 series of fibonacci series
+* program to print the first 98 series of fibonacci series
 * Return: value 0
 */
 
@@ -10,23 +10,21 @@ int main(void)
 {
 	int n;
 
-	long double first, second, next;
+	double first, second, next;
 
 	first = 1;
 	second = 2;
 	next = 0;
-	printf("%.0Lf, ", first);
-	printf("%.0Lf, ", second);
+	printf("%.0f, ", first);
+	printf("%.0f", second);
 	for (n = 1; n <= 96; n++)
 	{
+		printf(", ");
 		next = first + second;
 		first = second;
 		second = next;
-		if (n != 96)
-		printf("%.0Lf, ", next);
-		else
-		printf("%.0Lf\n", next);
+		printf("%.0f", next);
 	}
+	printf("\n");
 	return (0);
-
 }
