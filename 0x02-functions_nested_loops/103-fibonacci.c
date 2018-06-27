@@ -11,10 +11,10 @@ int main(void)
 	unsigned long int sum, first, second, next;
 
 	first = 1;
-	second = 2;
+	second = 1;
 	next = 0;
-	sum = 2;
-	for (n = 3; next < 4000000; n++)
+	sum = 0;
+	for (n = 2; next < 4000000; n++)
 	{
 		next = first + second;
 		first = second;
