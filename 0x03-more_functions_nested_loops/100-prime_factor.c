@@ -6,20 +6,18 @@
 */
 int main(void)
 {
-	unsigned long i, n, factor, j;
+	unsigned long i, factor;
 
-	n = 612852475143;
-	i = n / 2;
-	j = 2;
+	i = 612852475143;
+	factor = 2;
 
-	while (i > j)
+	while (i > factor)
 	{
-		while (n % j == 0)
+		while (i % factor == 0)
 		{
-			factor = j;
-			n = n / j;
+			i = i / factor;
 		}
-		j++;
+		factor++;
 	}
 	printf("%lu\n", factor);
 	return (0);
