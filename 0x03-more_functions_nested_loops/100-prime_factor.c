@@ -6,17 +6,18 @@
 */
 int main(void)
 {
-	unsigned long i, factor, j;
+	unsigned long i, n, factor, j;
 
-	i = 612852475143;
+	n = 612852475143;
+	i = n / 2;
 	j = 2;
 
 	while (i > j)
 	{
-		while (i % j == 0)
+		while (n % j == 0)
 		{
 			factor = j;
-			i = i / j;
+			n = n / j;
 		}
 		j++;
 	}
